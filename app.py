@@ -5,7 +5,7 @@ import random
 import streamlit as st
 
 # Load your dataset
-data = pd.read_csv(r'J:\projects\receipe\edamam_1000_recipes_with_full_instructions(1).csv', encoding='ISO-8859-1', on_bad_lines='skip')
+data = pd.read_csv('edamam_1000_recipes_with_full_instructions(1).csv', encoding='ISO-8859-1', on_bad_lines='skip')
 
 # Preprocess ingredients: convert to lowercase
 data['Ingredients'] = data['Ingredients'].apply(lambda x: x.lower())
